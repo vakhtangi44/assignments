@@ -1,0 +1,13 @@
+function notContains(array) {
+    let min = 0;
+    let newMin = 1
+    while (min !== newMin) {
+        min = newMin;
+        for (let i = 0; i < array.length; i++) {
+            if (newMin === array[i]) newMin++;
+        }
+    }
+    return newMin;
+}
+const nc = notContains([1, 3, 4, 10, 30, 5, 7, 2]);
+console.log(nc);
