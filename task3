@@ -9,5 +9,3 @@ function notContains(array) {
     }
     return newMin;
 }
-const nc = notContains([1, 3, 4, 10, 30, 5, 7, 2]);
-console.log(nc);
