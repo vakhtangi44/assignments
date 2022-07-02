@@ -1,0 +1,10 @@
+function isProperly(sequence) {
+    let leftPar = 0;
+    let rightPar = 0;
+    for (let i = 0; i < sequence.length; i++) {
+        if (sequence[i] === '(') leftPar++;
+        if (sequence[i] === ')') rightPar++;
+        if (rightPar > leftPar) return false;
+    }
+    return leftPar === rightPar;
+}
