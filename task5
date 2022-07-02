@@ -1,0 +1,5 @@
+function countVariants(stairsCount) {
+    if (stairsCount < 0) return 0;
+    if (stairsCount === 0) return 1
+    return countVariants(stairsCount - 1) + countVariants(stairsCount - 2);
+}
