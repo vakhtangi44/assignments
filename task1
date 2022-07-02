@@ -1,0 +1,3 @@
+function isPalindrome(String line) {
+  return line == line.split('').reverse().join('')
+}
